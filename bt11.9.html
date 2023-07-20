@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bt11.9</title>
+</head>
+
+<body>
+    <script>
+        let toan = +prompt('diem toan');
+        let li = +prompt('diem li');
+        let hoa = +prompt('diem hoa');
+        let van = +prompt('diem van');
+        let su = +prompt('diem su');
+        let dia = +prompt('diem dia');
+        let dtb = (toan + li + hoa + van + su + dia) / 6;
+        if (dtb >= 8 && dtb <= 10) {
+            alert('Gioi');
+        } else if (dtb >= 6.5 && dtb < 8) {
+            alert('Kha');
+        } else if (dtb >= 5 && dtb < 6.5) {
+            alert('Trung binh');
+        } else if (dtb < 5) {
+            alert('Yeu');
+        } else {
+            alert('Điểm không hợp lệ');
+        }
+    </script>
+</body>
+
+</html>

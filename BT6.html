@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BT6</title>
+</head>
+
+<body>
+    <script>
+        let weight = prompt("Hãy nhập cân nặng thật sự của bạn");
+        let height = prompt("Hãy nhập chiều cao thật sự của bạn");
+        let age = prompt("Hãy nhập độ số tuổi của bạn");
+        let bmi = weight / (height * height);
+        if (bmi < 18.5) {
+            document.write('Hiện tại bạn đang rất gầy cần chú ý vào việc ăn uống')
+        } else if (bmi < 25) {
+            document.write('Với số đo chiều cao và cân nặng hiện tại thì body của bạn rất chuẩn')
+        } else if (bmi >= 25) {
+            document.write('Hiện tại với số đo chiều cao và cân nặng này thì bạn đang hơi béo một chút')
+        } else if (bmi < 30) {
+            document.write('Bạn đang tiền béo phì rồi đấy hãy chú ý ăn uống và sinh hoạt đê điều chỉnh lại cơ thể ngay nào')
+        } else if (bmi < 35) {
+            document.write('Bạn đã béo phì cấp độ 1 rồi đó hãy đi khám và ăn uống sinh hoạt tập thể dục một cách điều độ')
+        } else if (bmi < 40) {
+            document.write('Bạn đã béo phì cấp độ 2 rồi đó hãy ăn kiêng ngay và đi khám để có được một kế hoạch rõ ràng để được đưa về trạng thái cân ổn định ')
+        } else if (bmi >= 40) {
+            document.write('Bạn đã béo phì cấp độ 3 rồi phải nói là bạn sắp xuống lỗ nếu vẫn duy trì thói quen sinh hoạt và ăn uống như vậy mà')
+        }
+    </script>
+</body>
+
+</html>

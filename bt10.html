@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BT10</title>
+</head>
+
+<body>
+    <script>
+        let date = prompt("Nhập vào ngày sinh của bạn:");
+        let month = prompt("Nhập vào tháng sinh của bạn:");
+        let zodiac = "";
+        switch (month) {
+            case "1":
+                if (date <= 19) {
+                    zodiac = "Ma Kết";
+                } else {
+                    zodiac = "Bảo Bình";
+                }
+                break;
+            case "2":
+                if (date <= 18) {
+                    zodiac = "Bảo Bình";
+                } else {
+                    zodiac = "Song Ngư";
+                }
+                break;
+            case "3":
+                if (date <= 20) {
+                    zodiac = "Song Ngư";
+                } else {
+                    zodiac = "Bạch Dương";
+                }
+                break;
+            case "4":
+                if (date <= 19) {
+                    zodiac = "Bạch Dương";
+                } else {
+                    zodiac = "Kim Ngưu";
+                }
+                break;
+            case "5":
+                if (date <= 20) {
+                    zodiac = "Kim Ngưu";
+                } else {
+                    zodiac = "Song Tử";
+                }
+                break;
+            case "6":
+                if (date <= 21) {
+                    zodiac = "Song Tử";
+                } else {
+                    zodiac = "Cự Giải";
+                }
+                break;
+            case "7":
+                if (date <= 22) {
+                    zodiac = "Cự Giải";
+                } else {
+                    zodiac = "Sư Tử";
+                }
+                break;
+            case "8":
+                if (date <= 22) {
+                    zodiac = "Sư Tử";
+                } else {
+                    zodiac = "Xử Nữ";
+                }
+                break;
+            case "9":
+                if (date <= 22) {
+                    zodiac = "Xử Nữ";
+                } else {
+                    zodiac = "Thiên Bình";
+                }
+                break;
+            case "10":
+                if (date <= 23) {
+                    zodiac = "Thiên Bình";
+                } else {
+                    zodiac = "Bọ Cạp";
+                }
+                break;
+            case "11":
+                if (date <= 21) {
+                    zodiac = "Bọ Cạp";
+                } else {
+                    zodiac = "Nhân Mã";
+                }
+                break;
+            case "12":
+                if (date <= 21) {
+                    zodiac = "Nhân Mã";
+                } else {
+                    zodiac = "Ma Kết";
+                }
+        }
+        alert("Bạn thuộc chòm sao: " + zodiac);
+
+    </script>
+</body>
+
+</html>
